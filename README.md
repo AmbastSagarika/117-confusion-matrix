@@ -6,7 +6,10 @@ factors = df[["age", "sex", "cp", "chol", "thalach"]]
 heart_attack = df["target"]
 
 factors_train, factors_test, heart_attack_train, heart_attack_test = train_test_split(factors, heart_attack, test_size = 0.25, random_state = 0)
-
+#
+#
+#
+#
 
 
 
@@ -16,14 +19,21 @@ sc_x = StandardScaler()
 factors_train = sc_x.fit_transform(factors_train)  
 factors_test = sc_x.transform(factors_test)
 
-
+#
+#
+#
+#
+#
 
 
 
 classifier2 = LogisticRegression(random_state = 0) 
 classifier2.fit(factors_train, heart_attack_train)
 
-
+#
+#
+#
+#
 
 
 
@@ -43,7 +53,10 @@ for i in heart_attack_test.ravel():
   else:
     actual_values_1.append("Yes")
     
-    
+   #
+#
+#
+# 
     
     
     
